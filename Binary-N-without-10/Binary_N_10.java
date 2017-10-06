@@ -34,15 +34,20 @@ public class Binary_N_10
         System.out.println("Given 'n', this program will give the number of binary strings\nof 'n' length that do not contain the substring '10'\n");         
         Scanner input;
         input = new Scanner(System.in);        
-        int n;        
-        System.out.print("What is your 'n'?: ");
-        n = input.nextInt();                
-        System.out.printf("\nThe number of 'good' strings is %d.\n\n\n",n+1);
-        for(int i = 0; i < n+1; i++)
+        int n;
+        while(true)
         {
-            System.out.printf("#%d  ",i+1);
-            System.out.println(createString(i,n));
+            System.out.print("What is your 'n'? (Type '0' to end): ");
+            n = input.nextInt();          
+            if(n == 0)
+                break;
+            System.out.printf("\nThe number of 'good' strings is %d.\n\n\n",n+1); 
+            for(int i = 0; i < n+1; i++)
+            {
+                System.out.printf("#%d  ",i+1);
+                System.out.println(createString(i,n));
+            }
+            System.out.println("\n");    
         }
-        System.out.println("\n");    
     }
 }
