@@ -1,2 +1,2 @@
 # Discrete-Math
-Collection of programs and scripts written for my Discrete Mathematics class (MATH 1660 @ SLU)
+Ended up being only a single program for this particular course, but was fun and a good challenge to create.
